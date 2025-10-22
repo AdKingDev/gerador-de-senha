@@ -1,0 +1,163 @@
+/* Reset Geral */
+* {
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Container Principal */
+body {
+    background-color: #18181B;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* "Logo" */
+.logo {
+    max-width: 600px;
+    margin-bottom: 24px;
+    
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Container do input e slider */
+.container-input {
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+.container-input span {
+    color: #fff;
+    font-size: 22px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 100%;
+    height: 18px;
+    margin-top: 8px;
+
+    border-radius: 5px;
+    background: #DFDFDF;
+    outline: none;
+}
+
+/* Botão Principal */
+.button-cta {
+    height: 40px;
+    margin-top: 40px;
+
+    background-color: aqua;
+    color: #18181B;
+
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    font-weight: bold;
+    font-size: 18px;
+
+    transition: background-color 0.3s ease;
+}
+
+/* Container da senha */
+.container-password {
+    max-width: 480px;
+    margin: 14px 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    cursor: pointer;
+}
+
+/* Título acima da senha */
+.title {
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+/* Bloco da senha */
+.password {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.144);
+    border: 1px solid #313131;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #fff;
+    transition: transform 0.5s;
+}
+
+/* Efeito de destaque ao passar o mouse por cima */
+.password:hover {
+    transform: scale(1.05);
+}
+
+.tooltip {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    
+    background: rgb(15, 15, 15);
+    border-radius: 6px;
+    top: 20px;
+    padding: 6px 8px;
+    
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+/* Esconde os elementos */
+.hide {
+    display: none;
+}
+
+/* Exibe o tooltip */
+.container-password:hover .tooltip {
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
+/* Rodapé */
+.footer {
+    position: absolute;
+    bottom: 10px;
+    
+    color: #ffffff4b;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffffff4b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
